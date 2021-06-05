@@ -53,7 +53,7 @@
     ```
 
 ## Start the react app
-
+1. Run the start script
     ```
     yarn start
     ```
