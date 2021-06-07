@@ -80,7 +80,7 @@ A browser tab should open showing the react app. If it doesn't, navigate to http
     git checkout -b FEATURE_BRANCH_NAME
     ```
 3. Push your new branch up to the repository. Be sure to replace FEATURE_BRANCH_NAME with the name of your branch
-    ``
+    ```
     git add .
     git commit -m "Pushing new feature branch"
     git push -u origin FEATURE_BRANCH_NAME
