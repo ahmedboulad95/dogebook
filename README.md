@@ -4,6 +4,7 @@
 
 1. Node.js - https://nodejs.org/en/download/
 2. Python - https://www.python.org/downloads/
+    - Be sure to check the box at the bottom of the prompt to include Python in your PATH
 3. Yarn
     Open git bash or other terminal application
     ```
@@ -31,9 +32,16 @@
     ```
     npm install
     ```
-2. Navigate to the api folder and install the backend dependencies with pip
+2. Create and activate a Python virtual environment
     ```
     cd api
+    python -m venv venv
+    cd venv/Scripts/
+    . activate
+    ```
+2. Navigate back to the api folder and install the python dependencies with pip
+    ```
+    cd ../..
     pip install -r requirements.txt
     ```
 3. Navigate back to the root project folder
@@ -59,3 +67,21 @@
     ```
 
 A browser tab should open showing the react app. If it doesn't, navigate to https://localhost:3000
+
+## Create a branch to work on a new feature
+
+1. In git bash, navigate to the project folder
+    ```
+    cd ~/Documents/dogebook
+    ```
+2. Checkout the main branch and then create a new feature branch. Be sure to replace FEATURE_BRANCH_NAME with a descriptive feature name
+    ```
+    git checkout main
+    git checkout -b FEATURE_BRANCH_NAME
+    ```
+3. Push your new branch up to the repository. Be sure to replace FEATURE_BRANCH_NAME with the name of your branch
+    ``
+    git add .
+    git commit -m "Pushing new feature branch"
+    git push -u origin FEATURE_BRANCH_NAME
+    ```
